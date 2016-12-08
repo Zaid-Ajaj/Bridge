@@ -829,6 +829,9 @@ namespace System
         [Template("{args:array}.join({separator})")]
         public static extern string Join(string separator, params string[] args);
 
+        [Template("{chars:array}.map(String.fromCharCode).join({separator})")]
+        public static extern string Join(string separator, params char[] chars);
+
         [Template("{args:array}.join({separator})")]
         public static extern string Join(string separator, params object[] args);
 
